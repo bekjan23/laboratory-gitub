@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bekjan23/laboratory-gitub/issues"
   },
-  "homepage": "https://github.com/bekjan23/laboratory-gitub#readme"
+  "homepage": "https://github.com/bekjan23/laboratory-gitub#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
 }
