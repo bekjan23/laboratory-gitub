@@ -17,11 +17,20 @@
 .video__content
     display: flex
     justify-content: space-between
+    margin: 0 auto
+    padding: 30px 0
+
+    @media screen and ( max-width: 1150px)
+        flex-direction: column
+        
 
 
 .video__block
     border: 1px solid #ffffff
     max-width: 265px
+    margin: 0 auto
+   
+        
 
 .video__block-li
     padding: 20px 15px
@@ -36,7 +45,23 @@
 .video__block-vid
     border: 1px solid #ffffff
     padding: 15px
+    margin: 0 auto
+    @media screen and ( max-width: 1150px)
+        margin: 50px auto
+    @media screen and ( max-width: 570px)
+        display: none
 
+
+.video__block-vid-mobile
+    display: none
+    
+
+    @media screen and ( max-width: 570px)
+        display: block
+        border: 1px solid #ffffff
+        padding: 15px
+        margin: 0 auto
+        margin: 50px auto
 
 .video-line
     background: repeating-linear-gradient(to right, #fed37f 0px, #fed37f 95px,#fff 95px, #fff 100px,#85d6de 100px, #85d6de 195px,#fff 195px,#fff 200px,#fe8f8c 200px,#fe8f8c 295px,#fff 295px,#fff 300px,#fed37f 300px,#fed37f 395px)

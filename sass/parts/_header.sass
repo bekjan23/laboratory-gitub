@@ -1,6 +1,6 @@
 .header
     background: #fff
-
+    position: relative
 
 .top 
     background: #34495e
@@ -23,6 +23,11 @@
     display: flex
     justify-content: space-between
     align-items: center
+    padding: 5px 0
+
+    @media screen and ( max-width:992px )
+        display: none
+        
 
 .address-info
     display: flex
@@ -62,11 +67,11 @@
 
 
 .search__fields
-    width: 365px
+    width: 355px
     border-radius: 40px
     background: #34495e
     border: none
-    padding: 5px
+    padding: 5px 10px
 
 
 .search__btn
@@ -86,6 +91,38 @@
 .header-top__logo
     padding: 15px
 
+
+.hamburger
+    display: none
+    outline: none
+    @media screen and ( max-width: 992px)
+        display: block
+
+.nav
+    transition: .2s 
+    @media screen and ( max-width: 992px)
+        
+        position: absolute
+        top: -100%
+        left: 0
+        height: 100%
+        width: 100%
+        background-color: #c1c1c1
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        &.is-active
+            top: 0
+        
+
+.search-icon-mobile
+    display: none
+    @media screen and ( max-width: 992px)
+        display: block
+    
+
 .nav__link
     padding: 0 10px
     text-decoration: none
@@ -94,11 +131,30 @@
     font-weight: normal
     font-size: 15px
 
+    @media screen and ( max-width: 992px)
+        padding: 15px 0
+        font-size: 18px
+        font-weight: bold       
+        .search-icon-mobile
+            overflow: visible
+ 
+
 .header-line
+    min-width: 100%
     height: 3px
     background: repeating-linear-gradient(to right, #fed37f 0px, #fed37f 95px,#fff 95px, #fff 100px,#85d6de 100px, #85d6de 195px,#fff 195px,#fff 200px,#fe8f8c 200px,#fe8f8c 295px,#fff 295px,#fff 300px,#fed37f 300px,#fed37f 395px)
 
+.header-content__container
+    display: flex
+    justify-content: space-between
+    padding: 10px
+    align-items: center
+    vertical-align: middle
 
+
+    @media screen and ( max-width:992px)
+        display: block
+        
 
 .header-content
     background: linear-gradient(to right, #45596c, #eceef0)
@@ -125,7 +181,7 @@
     padding: 0
     font-size: 64px
     color: rgb(255, 255, 255)
-    line-height: 0.625
+    line-height: 1
 
 
 
