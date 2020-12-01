@@ -1,8 +1,5 @@
 .video
     background-color: #34495e
-
-.video__content
-    padding-bottom: 120px
     
 
 .video__title
@@ -18,7 +15,7 @@
     display: flex
     justify-content: space-between
     margin: 0 auto
-    padding: 30px 0
+    padding: 30px 0 100px
 
     @media screen and ( max-width: 1150px)
         flex-direction: column
@@ -62,6 +59,18 @@
         padding: 15px
         margin: 0 auto
         margin: 50px auto
+
+.video__block-vid-mobile-2
+    display: none
+
+    @media screen and ( max-width: 370px)
+        display: block
+        border: 1px solid #ffffff
+        padding: 15px
+        margin: 0 auto
+        margin: 50px auto
+        .video__block-vid-mobile
+            display: none
 
 .video-line
     background: repeating-linear-gradient(to right, #fed37f 0px, #fed37f 95px,#fff 95px, #fff 100px,#85d6de 100px, #85d6de 195px,#fff 195px,#fff 200px,#fe8f8c 200px,#fe8f8c 295px,#fff 295px,#fff 300px,#fed37f 300px,#fed37f 395px)
