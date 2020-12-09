@@ -1,6 +1,9 @@
 .footer
     background-color: #34495e
 
+.footer__container
+    overflow: hidden
+
 
 .comments
     display: flex
@@ -56,6 +59,7 @@
     padding: 10px 15px 10px 0
 
 .comments__comment
+    max-width: 1170px
     font-size: 14px
     color: #fff
     line-height: 1.5
@@ -83,14 +87,19 @@
     display: flex
     justify-content: space-between
     font-family: 'Open Sans'
+    padding: 0 0 30px 0
     
     @media screen and ( max-width:992px  )
         flex-direction: column
         align-items: start
 
+
 .links__blog
-    max-width: 370px
+    max-width: 33%
     margin: 0 auto
+
+    @media screen and ( max-width:992px  )
+        max-width: 90%
 
 .links__title
     font-size: 16px
@@ -105,6 +114,7 @@
 .blog__img-wrap
     transition: .5s
     position: relative
+    cursor: pointer
     &::after
         transition: .5s
         content: ""
@@ -116,7 +126,7 @@
         border-radius: 50%
     &:hover
         &::after
-            background: red
+            background: silver
 
         
 
@@ -124,6 +134,9 @@
     cursor: pointer
     background: linear-gradient(#ccc,#ccc)
     
+
+.img__link-icon
+    cursor: pointer
 
 
 
@@ -144,8 +157,11 @@
 
 
 .links__contact
-    max-width: 300px
+    max-width: 33%
     margin: 0 auto
+
+    @media screen and ( max-width:992px  )
+        max-width: 90%
 
 .contact__address
     padding: 5px 20px
@@ -166,8 +182,11 @@
 
 
 .links__social
-    max-width: 350px
+    max-width: 33%
     margin: 0 auto
+
+    @media screen and ( max-width:992px  )
+        max-width: 90%
 
 .social__icons
     display: flex
@@ -175,3 +194,17 @@
 
 .footer__icons
     padding: 10px
+
+
+.footer-address-wrap
+    border-top: 1px solid #000000
+    padding: 30px 0 0 0
+
+
+.footer-address__name
+    font-size: 12px
+    line-height: 18px
+    color: #758594
+    font-weight: 400
+    font-family: "Open Sans"
+    text-align: center

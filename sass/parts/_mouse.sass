@@ -1,7 +1,11 @@
 .carousel
     position: relative
+
 .mouse-slider
     background-color: #95d9e0
+
+.mouse-slider__container
+    overflow: hidden
 
 
 .mouse-slider__title
@@ -14,9 +18,17 @@
     font-family: 'VarelaRound',sans-serif
 
    
-.carousel-inner
-    display: flex
-    padding: 0 0 100px 0
-
-.carousel-item
+.slide
     flex-basis: 100%
+    padding: 30px 0 100px 0
+    
+
+.swiper-slide
+    display: flex
+    align-items: center
+    justify-content: center
+
+.slide-img
+    max-width: 300px
+    max-height: 320px
+    cursor: pointer
