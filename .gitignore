@@ -1,10 +1,6 @@
-source/
 
 node_modules/
-
 img/**/thumb.db
 img/**/Thumb.db
-css/
 *.psd
-
 package-lock.json
